@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Results</title>
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
   	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   	<script src="https://code.jquery.com/jquery.js"></script>
   	<!-- Include all compiled plugins (below), or include individual files as needed -->
-  	<script src="js/bootstrap.min.js"></script>
+  	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   	
   	<script>
 
@@ -68,16 +68,16 @@
   				<h1>Your closest matches for subs within a block of campus are:</h1>
   				<div class="row">
   					<div class="col-md-3">
-  						<img src="images/halffastlogo.gif" alt text="Half Fast" width="200" height="175" rel="tooltip" data-placement="bottom" title="Benson Earth Sciences Floor 2, room 206.">
+  						<img src="{{ url_for('static', filename='images/halffastlogo.gif') }}" alt text="Half Fast" width="200" height="175" rel="tooltip" data-placement="bottom" title="Benson Earth Sciences Floor 2, room 206.">
   					</div>
   					<div class="col-md-6">
-  						<h2>Half Fast Subs</h2>
+  						<h2><a href="../view">Half Fast Subs</a></h2>
   						<div class="row">
                 We're not half assed, just half fast.
   						</div>
   					</div>
             <div class="col-md-3">
-              <img src="images/halffastlocation.png" alt text="Half Fast" width="200" height="175" rel="tooltip" data-placement="bottom" title="Benson Earth Sciences Floor 2, room 206.">
+              <img src="{{ url_for('static', filename='images/halffastlocation.gif') }}" alt text="Half Fast" width="200" height="175" rel="tooltip" data-placement="bottom" title="Benson Earth Sciences Floor 2, room 206.">
             </div>
   				</div>
           <br/>
@@ -85,16 +85,16 @@
           <br/>
   				<div class="row">
   					<div class="col-md-3">
-  						<img src="images/silverminelogo.jpg" alt text="Silver Mine" width="200" height="175" rel="tooltip" data-placement="bottom" title="Biology Basement, room 1b12.">
+  						<img src="{{ url_for('static', filename='images/silverminelogo.jpg') }}" alt text="Silver Mine" width="200" height="175" rel="tooltip" data-placement="bottom" title="Biology Basement, room 1b12.">
   					</div>
   					<div class="col-md-6">
-  						<h2>Silver Mine Subs</h2>
+  						<h2><a href="../view">Silver Mine Subs</a></h2>
   						<div class="row">
   							Subs to mine for...
   						</div>
   					</div>
             <div class="col-md-3">
-              <img src="images/silverminelocation.png" alt text="Silver Mine" width="200" height="175" rel="tooltip" data-placement="bottom" title="Biology Basement, room 1b12.">
+              <img src="{{ url_for('static', filename='images/silverminelocation.gif') }}" alt text="Silver Mine" width="200" height="175" rel="tooltip" data-placement="bottom" title="Biology Basement, room 1b12.">
             </div>
   				</div>
           <br/>
@@ -102,16 +102,16 @@
           <br/>
   				<div class="row">
   					<div class="col-md-3">
-  						<img src="images/subwaylogo.jpg" alt text="Subway" width="200" height="200" rel="tooltip" data-placement="bottom" title="EC South Tower, floor 2."	>
+  						<img src="{{ url_for('static', filename='images/subwaylogo.jpg') }}" alt text="Subway" width="200" height="200" rel="tooltip" data-placement="bottom" title="EC South Tower, floor 2."	>
   					</div>
   					<div class="col-md-6">
-  						<h2>Subway</h2>
+  						<h2><a href="../view">Subway</a></h2>
   						<div class="row">
   							5 dollar foot long.
   						</div>
   					</div>
             <div class="col-md-3">
-              <img src="images/subwaylocation.png" alt text="Subway" width="200" height="200" rel="tooltip" data-placement="bottom" title="EC South Tower, floor 2."  >
+              <img src="{{ url_for('static', filename='images/subwaylocation.gif') }}" alt text="Subway" width="200" height="200" rel="tooltip" data-placement="bottom" title="EC South Tower, floor 2."  >
             </div>
   				</div>
   			</div>
