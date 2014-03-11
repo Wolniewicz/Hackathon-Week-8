@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Buff Helpers</title>
+	<title>Drunk&Hungry</title>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,15 +20,47 @@
      <!-- Include all compiled plugins (below), or include individual files as needed -->
      <script src="js/bootstrap.min.js"></script>
      <div class="container">
+         <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Drunk&Hungry</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home.html">My Profile</a></li>
+                            <li><a href="#">Find Food</a></li>
+                            <li><a href="search.html">Find Specials</a></li>
+
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter a Type of Food">
+                            </div><form>
+                                <button class="btn">Search</button>
+                            </form>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right"></ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
       <div class="clearfix">
-       <div><center><h2>Welcome to</h2></center></div>
-       <div class="well"><center><h1>Buff Helpers</h1>Your one stop shop for all the hottest wires and circuits</center></div>
+        <div class="col-sm-12 panel panel-lg" style="font-weight: bold; text-align: center">Welcome to Drunk&Hungry. We know why you're here, and we are ready to help. We hope you can take advantage simple user interface and great deals. <br>Stay hungry my friends.</div>
        <div class="row">
         <div class="col-md-4">
           <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="well well-sm" style="font-weight: bold">Sign Up to Save Your Favorite Places</div>
           <form role="form">
             <input class="form-control input-lg" type="text" placeholder="First Name"></input>
-            <input class="form-control input-lg" type="text" placeholder="Last Name"></input>
+            <input class="form-control input-lg" style="margin-top: 10px" type="text" placeholder="Last Name"></input>
             <div class="form-group">
               <br>
               <label for="exampleInputEmail1">Email address</label>
@@ -39,14 +71,14 @@
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <FORM>
-              <INPUT Type="BUTTON" VALUE="Continue" ONCLICK="window.location.href='home.html'"> </input>
+              <button class="btn">Sign Up!</button>
               </FORM>
             </form>
           </div>
 
 <div class="col-md-6">
   <div class="bs-example">
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide col-sm-offset-1" data-interval="4000" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -56,15 +88,15 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="active item">
-                <img src="http://www.napavalley.edu/Committees/CS/PublishingImages/study.jpg" alt="Slide 1">
+                <img src="http://www.simplyscratch.com/wp-content/uploads/2012/12/Italian-Sub-Sandwich.jpg" alt="Slide 1">
                 
             </div>
             <div class="item">
-                <img src="http://2.bp.blogspot.com/-xIA7t5J-6xA/UN2w80okt3I/AAAAAAAAAAw/rKlpW-06uxc/s1600/1.jpg" width="853" height="658" alt="Slide 2">
+                <img src="http://asianexpresscharlottesville.com/wp-content/uploads/2014/01/Chinese-General-Tso-Chicken1.jpg" width="853" height="658" alt="Slide 2">
                 
             </div>
             <div class="item">
-                <img src="http://media.masslive.com/opinion_impact/photo/9247496-large.jpg" width="853" height="658" alt="Slide 3">
+                <img src="http://www.bubblews.com/assets/images/news/1396186463_1365422452.jpg" width="853" height="658" alt="Slide 3">
                 
             </div>
         </div>
